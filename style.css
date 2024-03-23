@@ -1,0 +1,130 @@
+/* Estilo del header */
+#logo {
+    height: 32px;
+}
+header{
+    background-color: #f2eee9;
+}
+header ul li {
+    list-style-type: none;
+}
+header ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: black;
+}
+
+
+/* Estilos globales de texto */
+.titular1{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 84px;
+    color: black;
+}
+.titular2{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 44px;
+    color: black;
+}
+.titular3{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+}
+.parrafo1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+}
+
+
+/* Estilos del main general */
+main {
+    background-color: #f2eee9;
+}
+
+
+/* Estilos especificos para Services */
+.services h2 span {
+    font-weight: bold;
+}
+.services ul li {
+    list-style-type: none;
+}
+
+
+/* Estilos específicos para Work */
+.work a {
+    text-decoration: none;
+    color: black;
+}
+.work .portadaProyecto {
+    width: 400px;
+}
+
+
+/* Estilos específicos para página de proyecto */
+#bandaProyectos{
+    background-color: black;
+}
+#bandaProyectos p{
+    color: white;
+}
+#bandaProyectos a{
+    color: white;
+}
+#bandaProyectos img {
+    width: 400px;
+}
+
+/* Estilos específicos para About */
+#diagramaCreativo{
+    height: 300px;
+}
+.about ul{
+    list-style-type: none;
+}
+.about a{
+    color: black;
+}
+
+
+/* Estilos específicos para Contact */
+.contact{
+    text-align: center;
+}
+
+
+/* Estilos del footer */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+}
+footer ul li{
+    list-style: none;
+}
+footer a {
+    color: white;
+}
