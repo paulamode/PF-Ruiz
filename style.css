@@ -1,4 +1,10 @@
-/* Estilo del header */
+/* Quitamos paddings y margins por defecto */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Estilo del header */
 #logo {
     height: 32px;
 }
