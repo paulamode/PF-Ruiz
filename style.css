@@ -5,9 +5,31 @@
 }
 
 /*Estilo del header */
-#logo {
-    height: 32px;
+.custom-navbar {
+    background-color: #f2eee9;
 }
+
+.custom-navbar .navbar-nav .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: black;
+    text-decoration: none;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: black; /* Change color to black on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+#logo {
+    height: 30px;
+}
+
+/* Estilos del navbar antiguo:
+
 header{
     background-color: #f2eee9;
 }
@@ -20,7 +42,7 @@ header ul li a {
     font-weight: 300;
     color: black;
 }
-
+*/
 
 /* Estilos globales de texto */
 .titular1{
