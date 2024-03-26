@@ -7,6 +7,7 @@
 /*Estilo del header */
 .custom-navbar {
     background-color: #f2eee9;
+    padding: 0 23px;
 }
 
 .custom-navbar .navbar-nav .nav-link {
@@ -85,8 +86,26 @@ header ul li a {
 /* Estilos del main general */
 main {
     background-color: #f2eee9;
+    min-height: 85vh; /* Para que el main ocupe siempre al menos el 85% del alto de pantalla aunque no haya suficiente contenido*/
+    display: flex;
+    flex-direction: column;
 }
 
+/* Estilos específicos para Home */
+.grid-container-home {
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* 5/6 of the screen width for the first column, 1/6 for the second column */
+    padding: 0 30px;
+    margin: auto 0; /* Centrar contenido verticalmente */
+}
+
+.grid-container-home .intro-home {
+    grid-column: 1; /* Ocupa la columna 1, es decir, 5/6 del grid */
+}
+
+.grid-container-home .boton-intro-home {
+    grid-column: 1;
+}
 
 /* Estilos especificos para Services */
 .services h2 span {
@@ -149,10 +168,31 @@ footer{
     font-style: normal;
     font-size: 18px;
     line-height: 21px;
+    padding: 24px;
+    margin-top: auto;
 }
 footer ul li{
     list-style: none;
 }
 footer a {
     color: white;
+}
+
+/* Ajustes a pantallas con media queries */
+
+/* Para mobile */
+@media (max-width: 768px) {
+    .grid-container-home {
+        grid-template-columns: 1fr; /* Hacer el grid de la home 1 sola columna cuando estemos en movil */
+    }
+
+    .grid-container-home .intro-home {
+        font-size: 42px;
+        line-height: 44px;
+    }
+
+    footer{
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
