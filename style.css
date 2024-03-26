@@ -108,11 +108,35 @@ main {
 }
 
 /* Estilos especificos para Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Grid de 6 columnas iguales */
+    padding: 30px;
+}
+
+.services .titular1 {
+    grid-column: 1 / span 5; /* Que ocupe columnas 1 a 5 */
+}
+
+.services .titular2 {
+    grid-column: 1 / span 5; /* Que ocupe columnas 1 a 5 */
+    margin-top: 10px;
+}
+
+.services .parrafo1 {
+    grid-column: 2 / span 6; /* Columnas 2 a 6 */
+}
+
 .services h2 span {
     font-weight: bold;
 }
 .services ul li {
     list-style-type: none;
+}
+
+.otros-servicios {
+    padding: 0; /* Quitar espacio que queda a la izquierda al ser elementos de lista */
+    margin: 0;
 }
 
 
@@ -189,6 +213,10 @@ footer a {
     .grid-container-home .intro-home {
         font-size: 42px;
         line-height: 44px;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
     }
 
     footer{
