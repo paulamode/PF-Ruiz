@@ -5,7 +5,10 @@
 
 .custom-navbar {
   background-color: #f2eee9;
-  padding: 0 23px;
+  padding: 10px 0px 10px 21px;
+}
+.custom-navbar .navbar-toggler {
+  border: none;
 }
 .custom-navbar .navbar-nav .nav-link {
   font-family: "Roboto", sans-serif;
@@ -22,7 +25,7 @@
 }
 
 #logo {
-  height: 30px;
+  height: 28px;
 }
 
 .titular1 {
@@ -31,7 +34,7 @@
   font-weight: 300;
   font-style: normal;
   font-size: 80px;
-  line-height: 84px;
+  line-height: 86px;
   color: black;
 }
 
@@ -41,7 +44,7 @@
   font-weight: 300;
   font-style: normal;
   font-size: 42px;
-  line-height: 44px;
+  line-height: 46px;
   color: black;
 }
 
@@ -60,7 +63,7 @@
   font-weight: 300;
   font-style: normal;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 22px;
   color: black;
 }
 
@@ -91,13 +94,15 @@ main {
 }
 .services .titular1 {
   grid-column: 1/span 5;
+  margin-top: 0px;
 }
 .services .titular2 {
   grid-column: 1/span 5;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 .services .parrafo1 {
   grid-column: 2/span 6;
+  margin-bottom: 30px;
 }
 .services h2 span {
   font-weight: bold;
@@ -174,18 +179,43 @@ footer a {
     font-size: 42px;
     line-height: 46px;
   }
-  .services {
-    grid-template-columns: 1fr;
+  .titular1 {
+    font-size: 42px;
+    line-height: 46px;
+  }
+  .titular2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .parrafo1 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .services .titular1 {
+    grid-column: 1/span 6;
+  }
+  .services .titular2 {
+    grid-column: 1/span 6;
   }
   footer {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .intro-home {
+  .titular1 {
     font-size: 60px;
     line-height: 68px;
+  }
+  .titular2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .services .titular1 {
+    grid-column: 1/span 6;
+  }
+  .services .titular2 {
+    grid-column: 1/span 6;
   }
 }
 

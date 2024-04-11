@@ -5,17 +5,22 @@
 //Estilo del header
 .custom-navbar {
     background-color: $bright-color-1;
-    padding: 0 23px;
+    padding: 10px 0px 10px 21px;
+
+    .navbar-toggler {
+        // Quita el borde en el icono del menu hamburguesa
+        border: none; 
+    }
 
     .navbar-nav{
         .nav-link{
             font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-style: normal;
-        font-size: 18px;
-        line-height: 21px;
-        color: $dark-color-1;
-        text-decoration: none;
+            font-weight: 300;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 21px;
+            color: $dark-color-1;
+            text-decoration: none;
         }
 
         .nav-link:hover{
@@ -26,7 +31,7 @@
 }
 
 #logo {
-    height: 30px;
+    height: 28px;
 }
 
 // Estilos globales de texto
@@ -79,16 +84,18 @@ main {
     padding: 30px;
     .titular1 {
         // Que ocupe columnas 1 a 5
-        grid-column: 1 / span 5; 
+        grid-column: 1 / span 5;
+        margin-top: 0px;
     }
     .titular2 {
         // Que ocupe columnas 1 a 5
         grid-column: 1 / span 5;
-        margin-top: 10px;
+        margin-top: 0px;
     }
     .parrafo1 {
         // Columnas 2 a 6
         grid-column: 2 / span 6; 
+        margin-bottom: 30px;
     }
     h2{
         span{
@@ -178,6 +185,8 @@ footer{
 
 //Mobile
 @media (max-width: 768px) {
+    
+    // Ajustes en home
     .grid-container-home {
         // Hacer el grid de la home 1 sola columna cuando estemos en movil
         grid-template-columns: 1fr; 
@@ -186,21 +195,57 @@ footer{
             line-height: 46px;
         }
     }
-
+    
+    //Ajustes generales fuentes
+    .titular1{
+        font-size: 42px;
+        line-height: 46px;
+        }
+    .titular2{
+        font-size: 30px;
+        line-height: 36px;
+        }
+    .parrafo1{
+        font-size: 14px;
+        line-height: 20px;
+        }
+    
+    // Ajustes services
     .services{
-        grid-template-columns: 1fr;
+        .titular1{
+            grid-column: 1 / span 6;
+        }
+        .titular2{
+            grid-column: 1 / span 6;
+        }
     }
-
+    
+    //Ajustes en el footer
     footer{
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
 //Tablet
 @media (min-width: 769px) and (max-width: 992px){
-    .intro-home {
+    // Ajustes generales titulares
+    .titular1 {
         font-size: 60px;
         line-height: 68px;
+    }
+    .titular2{
+        font-size: 34px;
+        line-height: 40px;
+        }
+
+    // Ajustes services
+    .services{
+        .titular1{
+            grid-column: 1 / span 6;
+        }
+        .titular2{
+            grid-column: 1 / span 6;
+        }
     }
 }
