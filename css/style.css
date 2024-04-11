@@ -172,7 +172,7 @@ footer a {
   }
   .grid-container-home .intro-home {
     font-size: 42px;
-    line-height: 44px;
+    line-height: 46px;
   }
   .services {
     grid-template-columns: 1fr;
@@ -180,6 +180,12 @@ footer a {
   footer {
     font-size: 16px;
     line-height: 18px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .intro-home {
+    font-size: 60px;
+    line-height: 68px;
   }
 }
 
