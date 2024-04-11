@@ -154,9 +154,13 @@ main {
 }
 
 //Estilos about
-#diagramaCreativo{
-    height: 300px;
+.about{
+    padding: 10px 31px;
+    #diagramaCreativo{
+        width: 80vw;
+    }
 }
+
 
 .about{
     ul {
@@ -247,6 +251,11 @@ footer{
                 width: calc(100vw - 50px); 
             }
         }
+    }
+
+    //Ajustes about
+    .about{
+        padding: 10px 24px;
     }
     
     //Ajustes en el footer

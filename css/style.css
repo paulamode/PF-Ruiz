@@ -150,8 +150,11 @@ main {
   width: 400px;
 }
 
-#diagramaCreativo {
-  height: 300px;
+.about {
+  padding: 10px 31px;
+}
+.about #diagramaCreativo {
+  width: 80vw;
 }
 
 .about ul {
@@ -219,6 +222,9 @@ footer a {
   }
   .work .projects-container .portadaProyecto {
     width: calc(100vw - 50px);
+  }
+  .about {
+    padding: 10px 24px;
   }
   footer {
     font-size: 14px;
