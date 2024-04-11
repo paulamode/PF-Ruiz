@@ -137,6 +137,10 @@ main {
   margin-bottom: 14px;
 }
 
+.project .portada-proyecto {
+  width: 100vw;
+}
+
 #bandaProyectos {
   background-color: black;
 }

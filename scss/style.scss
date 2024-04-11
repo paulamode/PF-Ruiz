@@ -140,6 +140,11 @@ main {
 }
 
 //Estilos project
+.project{
+    .portada-proyecto{
+        width: 100vw;
+    }
+}
 #bandaProyectos{
     background-color: $dark-color-1;
     p{
