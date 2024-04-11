@@ -5,7 +5,7 @@
 
 .custom-navbar {
   background-color: #f2eee9;
-  padding: 10px 0px 10px 21px;
+  padding: 10px 13px 10px 24px;
 }
 .custom-navbar .navbar-toggler {
   border: none;
@@ -117,23 +117,24 @@ main {
 }
 
 .work {
-  padding: 0 21px;
+  padding: 10px 21px;
   display: flex;
   align-items: center;
 }
 .work .projects-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 35px;
   justify-content: center;
   align-items: center;
 }
-.work a {
+.work .projects-container a {
   text-decoration: none;
   color: black;
 }
-.work .portadaProyecto {
-  width: 30vw;
+.work .projects-container .portadaProyecto {
+  width: calc(33vw - 42px);
+  margin-bottom: 14px;
 }
 
 #bandaProyectos {
@@ -184,13 +185,6 @@ footer a {
 }
 
 @media (max-width: 768px) {
-  .grid-container-home {
-    grid-template-columns: 1fr;
-  }
-  .grid-container-home .intro-home {
-    font-size: 42px;
-    line-height: 46px;
-  }
   .titular1 {
     font-size: 42px;
     line-height: 46px;
@@ -203,11 +197,28 @@ footer a {
     font-size: 14px;
     line-height: 20px;
   }
+  .custom-navbar {
+    padding: 10px 0px 10px 14px;
+  }
+  .grid-container-home {
+    grid-template-columns: 1fr;
+  }
+  .grid-container-home .intro-home {
+    font-size: 42px;
+    line-height: 46px;
+  }
   .services .titular1 {
     grid-column: 1/span 6;
   }
   .services .titular2 {
     grid-column: 1/span 6;
+  }
+  .work .projects-container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .work .projects-container .portadaProyecto {
+    width: calc(100vw - 50px);
   }
   footer {
     font-size: 14px;
@@ -223,11 +234,21 @@ footer a {
     font-size: 34px;
     line-height: 40px;
   }
+  .custom-navbar {
+    padding: 10px 0px 10px 20px;
+  }
   .services .titular1 {
     grid-column: 1/span 6;
   }
   .services .titular2 {
     grid-column: 1/span 6;
+  }
+  .work .projects-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .work .projects-container .portadaProyecto {
+    width: calc(50vw - 45px);
   }
 }
 

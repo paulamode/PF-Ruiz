@@ -5,7 +5,7 @@
 //Estilo del header
 .custom-navbar {
     background-color: $bright-color-1;
-    padding: 10px 0px 10px 21px;
+    padding: 10px 13px 10px 24px;
 
     .navbar-toggler {
         // Quita el borde en el icono del menu hamburguesa
@@ -117,25 +117,26 @@ main {
 
 //Estilos para work
 .work{
-    padding: 0 21px; // Apply padding
+    padding: 10px 21px; // Apply padding
     display: flex;
     align-items: center;
 
     .projects-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
+        gap: 35px;
         justify-content: center;
         align-items: center;
+        a{
+            text-decoration: none;
+            color: $dark-color-1;
+        }
+        .portadaProyecto {
+            width: calc(33vw - 42px);
+            margin-bottom: 14px;
+        }
     }
 
-    a{
-        text-decoration: none;
-        color: $dark-color-1;
-    }
-    .portadaProyecto {
-        width: 30vw;
-    }
 }
 
 //Estilos project
@@ -197,17 +198,7 @@ footer{
 
 //Mobile
 @media (max-width: 768px) {
-    
-    // Ajustes en home
-    .grid-container-home {
-        // Hacer el grid de la home 1 sola columna cuando estemos en movil
-        grid-template-columns: 1fr; 
-        .intro-home {
-            font-size: 42px;
-            line-height: 46px;
-        }
-    }
-    
+
     //Ajustes generales fuentes
     .titular1{
         font-size: 42px;
@@ -221,6 +212,21 @@ footer{
         font-size: 14px;
         line-height: 20px;
         }
+
+    //Ajustes navbar
+    .custom-navbar {
+        padding: 10px 0px 10px 14px;
+    }
+    
+    // Ajustes en home
+    .grid-container-home {
+        // Hacer el grid de la home 1 sola columna cuando estemos en movil
+        grid-template-columns: 1fr; 
+        .intro-home {
+            font-size: 42px;
+            line-height: 46px;
+        }
+    }
     
     // Ajustes services
     .services{
@@ -229,6 +235,17 @@ footer{
         }
         .titular2{
             grid-column: 1 / span 6;
+        }
+    }
+
+    //Ajustes en work
+    .work{
+        .projects-container {
+            grid-template-columns: 1fr;
+            gap: 5px;
+            .portadaProyecto {
+                width: calc(100vw - 50px); 
+            }
         }
     }
     
@@ -251,6 +268,11 @@ footer{
         line-height: 40px;
         }
 
+    //Ajustes navbar
+    .custom-navbar {
+        padding: 10px 0px 10px 20px;
+    }
+
     // Ajustes services
     .services{
         .titular1{
@@ -258,6 +280,17 @@ footer{
         }
         .titular2{
             grid-column: 1 / span 6;
+        }
+    }
+
+    //Ajustes en work
+    .work{
+        .projects-container {
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            .portadaProyecto {
+                width: calc(50vw - 45px); 
+            }
         }
     }
 }
