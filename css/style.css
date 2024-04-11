@@ -232,8 +232,14 @@ main {
   color: black;
 }
 
-.contact {
-  text-align: center;
+.grid-container-contact {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding: 0 30px;
+  margin: auto 0;
+}
+.grid-container-contact .titular1, .grid-container-contact .parrafo1 {
+  grid-column: 1;
 }
 
 footer {
@@ -273,10 +279,6 @@ footer a {
   }
   .grid-container-home {
     grid-template-columns: 1fr;
-  }
-  .grid-container-home .intro-home {
-    font-size: 42px;
-    line-height: 46px;
   }
   .services .titular1 {
     grid-column: 1/span 6;
@@ -338,6 +340,9 @@ footer a {
   }
   .about .about-career .career-linkedin {
     grid-column: 1/span 2;
+  }
+  .grid-container-contact {
+    grid-template-columns: 1fr;
   }
   footer {
     font-size: 14px;

@@ -242,8 +242,15 @@ main {
 }
 
 //Estilos contact
-.contact{
-    text-align: center;
+.grid-container-contact{
+    //Replica del layour de index
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    padding: 0 30px;
+    margin: auto 0;
+    .titular1, .parrafo1{
+        grid-column: 1;
+    }
 }
 
 //Estilos footer
@@ -295,11 +302,7 @@ footer{
     // Ajustes en home
     .grid-container-home {
         // Hacer el grid de la home 1 sola columna cuando estemos en movil
-        grid-template-columns: 1fr; 
-        .intro-home {
-            font-size: 42px;
-            line-height: 46px;
-        }
+        grid-template-columns: 1fr;
     }
     
     // Ajustes services
@@ -373,6 +376,11 @@ footer{
         }
     }
     
+    //Ajustes contact
+    .grid-container-contact {
+        grid-template-columns: 1fr;
+    }
+
     //Ajustes en el footer
     footer{
         font-size: 14px;
