@@ -117,7 +117,7 @@ main {
 
 //Estilos para work
 .work{
-    padding: 10px 21px; // Apply padding
+    padding: 10px 21px 30px 21px;
     display: flex;
     align-items: center;
 
@@ -155,9 +155,79 @@ main {
 
 //Estilos about
 .about{
-    padding: 10px 31px;
-    #diagramaCreativo{
-        width: 80vw;
+    padding: 10px 30px;
+    .about-intro{
+        padding-bottom: 20px;
+        display: grid;
+        // Grid de 5 columnas iguales
+        grid-template-columns: repeat(5, 1fr);
+            .titular1{
+                // Que ocupe columnas 1 a 5
+                grid-column: 1 / span 5;
+            }
+            .parrafo1{
+                grid-column: 2 / span 5;;
+            }
+    }
+    .about-approach{
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .parrafo1{
+            grid-column: 1 / span 1;
+        }
+        .titular3{
+            grid-column: 2 / span 4;
+        }
+        #diagramaCreativo{
+            grid-column: 2 / span 4;
+            width: 75vw;
+        }
+    }
+    .about-experience{
+        padding-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .experience-title{
+            grid-column: 1 / span 1;
+        }
+        .experience-block-1{
+            grid-column: 2 / span 2;
+            padding: 0;
+            margin: 0;
+        }
+        .experience-block-2{
+            grid-column: 4 / span 2;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .about-career{
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        .career-title{
+            grid-column: 1 / span 1;
+        }
+        .career-block-1{
+            grid-column: 2 / span 2;
+            padding: 0;
+            margin: 0;
+            li{
+                margin-bottom: 20px;
+            }
+        }
+        .career-block-2{
+            grid-column: 4 / span 2;
+            padding: 0;
+            margin: 0;
+            li{
+                margin-bottom: 20px;
+            }
+        }
+        .career-linkedin{
+            grid-column: 2 / span 4;
+        }
     }
 }
 
@@ -256,6 +326,51 @@ footer{
     //Ajustes about
     .about{
         padding: 10px 24px;
+        .about-intro{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .about-approach{
+            grid-template-columns: repeat(1, 1fr);
+            .parrafo1, .titular3, #diagramaCreativo {
+                grid-column: 1 / span 1;
+            }
+            #diagramaCreativo{
+                width: 85vw;
+            }
+        }
+        .about-experience{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            .experience-title, .experience-block-1 {
+                grid-column: 1 / span 1;
+                margin: 0;
+                padding: 0;
+                li{
+                    padding-bottom: 5px;
+                }
+            }
+            .experience-block-2{
+                grid-column: 2 / span 1;
+                li{
+                    padding-bottom: 5px;
+                }
+            }
+        }
+        .about-career{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            .career-title, .career-block-1{
+                grid-column: 1 / span 1;
+                margin: 0;
+                padding: 0;
+            }
+            .career-block-2{
+                grid-column: 2 / span 1;
+            }
+            .career-linkedin{
+                grid-column: 1 / span 2;
+            }
+        }
     }
     
     //Ajustes en el footer
