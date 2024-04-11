@@ -1,0 +1,40 @@
+@import "variables";
+
+@mixin titular1{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 84px;
+    color: $dark-color-1;
+}
+
+@mixin titular2{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 42px;
+    line-height: 44px;
+    color: $dark-color-1;
+}
+
+@mixin titular3{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: $dark-color-1;
+}
+
+@mixin parrafo1{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: $dark-color-1;
+}

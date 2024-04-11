@@ -1,226 +1,186 @@
-/* Quitamos paddings y margins por defecto */
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-/*Estilo del header */
 .custom-navbar {
-    background-color: #f2eee9;
-    padding: 0 23px;
+  background-color: #f2eee9;
+  padding: 0 23px;
 }
-
 .custom-navbar .navbar-nav .nav-link {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
-    text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+  text-decoration: none;
 }
-
 .custom-navbar .navbar-nav .nav-link:hover {
-    color: black; /* Change color to black on hover */
-    text-decoration: underline; /* Add underline on hover */
+  color: black;
+  text-decoration: underline;
 }
 
 #logo {
-    height: 30px;
+  height: 30px;
 }
 
-/* Estilos del navbar antiguo:
-
-header{
-    background-color: #f2eee9;
-}
-header ul li {
-    list-style-type: none;
-}
-header ul li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 300;
-    color: black;
-}
-*/
-
-/* Estilos globales de texto */
-.titular1{
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 80px;
-    line-height: 84px;
-    color: black;
-}
-.titular2{
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 42px;
-    line-height: 44px;
-    color: black;
-}
-.titular3{
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 30px;
-    line-height: 36px;
-    color: black;
-}
-.parrafo1{
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    color: black;
+.titular1 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 80px;
+  line-height: 84px;
+  color: black;
 }
 
+.titular2 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 44px;
+  color: black;
+}
 
-/* Estilos del main general */
+.titular3 {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 36px;
+  color: black;
+}
+
+.parrafo1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: black;
+}
+
 main {
-    background-color: #f2eee9;
-    min-height: 85vh; /* Para que el main ocupe siempre al menos el 85% del alto de pantalla aunque no haya suficiente contenido*/
-    display: flex;
-    flex-direction: column;
+  background-color: #f2eee9;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Estilos específicos para Home */
 .grid-container-home {
-    display: grid;
-    grid-template-columns: 5fr 1fr; /* 5/6 of the screen width for the first column, 1/6 for the second column */
-    padding: 0 30px;
-    margin: auto 0; /* Centrar contenido verticalmente */
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  padding: 0 30px;
+  margin: auto 0;
 }
-
 .grid-container-home .intro-home {
-    grid-column: 1; /* Ocupa la columna 1, es decir, 5/6 del grid */
+  grid-column: 1;
 }
-
 .grid-container-home .boton-intro-home {
-    grid-column: 1;
+  grid-column: 1;
 }
 
-/* Estilos especificos para Services */
 .services {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Grid de 6 columnas iguales */
-    padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 30px;
 }
-
 .services .titular1 {
-    grid-column: 1 / span 5; /* Que ocupe columnas 1 a 5 */
+  grid-column: 1/span 5;
 }
-
 .services .titular2 {
-    grid-column: 1 / span 5; /* Que ocupe columnas 1 a 5 */
-    margin-top: 10px;
+  grid-column: 1/span 5;
+  margin-top: 10px;
 }
-
 .services .parrafo1 {
-    grid-column: 2 / span 6; /* Columnas 2 a 6 */
+  grid-column: 2/span 6;
 }
-
 .services h2 span {
-    font-weight: bold;
+  font-weight: bold;
 }
 .services ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .otros-servicios {
-    padding: 0; /* Quitar espacio que queda a la izquierda al ser elementos de lista */
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-
-/* Estilos específicos para Work */
 .work a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .work .portadaProyecto {
-    width: 400px;
+  width: 400px;
 }
 
-
-/* Estilos específicos para página de proyecto */
-#bandaProyectos{
-    background-color: black;
+#bandaProyectos {
+  background-color: black;
 }
-#bandaProyectos p{
-    color: white;
+#bandaProyectos p {
+  color: white;
 }
-#bandaProyectos a{
-    color: white;
+#bandaProyectos a {
+  color: white;
 }
 #bandaProyectos img {
-    width: 400px;
+  width: 400px;
 }
 
-/* Estilos específicos para About */
-#diagramaCreativo{
-    height: 300px;
-}
-.about ul{
-    list-style-type: none;
-}
-.about a{
-    color: black;
+#diagramaCreativo {
+  height: 300px;
 }
 
-
-/* Estilos específicos para Contact */
-.contact{
-    text-align: center;
+.about ul {
+  list-style-type: none;
+}
+.about a {
+  color: black;
 }
 
-
-/* Estilos del footer */
-footer{
-    background-color: black;
-    text-align: center;
-    color: white;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 21px;
-    padding: 24px;
-    margin-top: auto;
+.contact {
+  text-align: center;
 }
-footer ul li{
-    list-style: none;
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 24px;
+  margin-top: auto;
+}
+footer ul li {
+  list-style: none;
 }
 footer a {
-    color: white;
+  color: white;
 }
 
-/* Ajustes a pantallas con media queries */
-
-/* Para mobile */
 @media (max-width: 768px) {
-    .grid-container-home {
-        grid-template-columns: 1fr; /* Hacer el grid de la home 1 sola columna cuando estemos en movil */
-    }
-
-    .grid-container-home .intro-home {
-        font-size: 42px;
-        line-height: 44px;
-    }
-
-    .services{
-        grid-template-columns: 1fr;
-    }
-
-    footer{
-        font-size: 16px;
-        line-height: 18px;
-    }
+  .grid-container-home {
+    grid-template-columns: 1fr;
+  }
+  .grid-container-home .intro-home {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  .services {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

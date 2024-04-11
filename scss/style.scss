@@ -1,0 +1,198 @@
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "utilidades/reset";
+
+//Estilo del header
+.custom-navbar {
+    background-color: $bright-color-1;
+    padding: 0 23px;
+
+    .navbar-nav{
+        .nav-link{
+            font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: $dark-color-1;
+        text-decoration: none;
+        }
+
+        .nav-link:hover{
+            color: $dark-color-1;
+            text-decoration: underline;
+        }
+    }
+}
+
+#logo {
+    height: 30px;
+}
+
+// Estilos globales de texto
+.titular1{
+    @include titular1;
+}
+.titular2{
+    @include titular2;
+}
+.titular3{
+    @include titular3;
+}
+.parrafo1{
+    @include parrafo1;
+}
+
+//Estilos del main general
+main {
+    background-color: $bright-color-1;
+    // Para que el main ocupe siempre al menos el 85% del alto de pantalla aunque no haya suficiente contenido
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+//Estilos para index
+.grid-container-home {
+    display: grid;
+    // 5/6 de la pantalla para la 1a columna, 1/6 para la 2a 
+    grid-template-columns: 5fr 1fr;
+    padding: 0 30px;
+    // Centrar contenido verticalmente
+    margin: auto 0; 
+
+    .intro-home {
+        // Ocupa la columna 1, es decir, 5/6 del grid
+        grid-column: 1;
+    }
+
+    .boton-intro-home {
+        grid-column: 1;
+    }
+}
+
+//Estilos para services
+.services {
+    display: grid;
+    // Grid de 6 columnas iguales
+    grid-template-columns: repeat(6, 1fr); 
+    padding: 30px;
+    .titular1 {
+        // Que ocupe columnas 1 a 5
+        grid-column: 1 / span 5; 
+    }
+    .titular2 {
+        // Que ocupe columnas 1 a 5
+        grid-column: 1 / span 5;
+        margin-top: 10px;
+    }
+    .parrafo1 {
+        // Columnas 2 a 6
+        grid-column: 2 / span 6; 
+    }
+    h2{
+        span{
+            font-weight: bold;
+        }
+    }
+    ul{
+        li{
+            list-style-type: none;
+        }
+    }
+}
+
+.otros-servicios {
+    // Quitar espacio que queda a la izquierda al ser elementos de lista
+    padding: 0;
+    margin: 0;
+}
+
+//Estilos para work
+.work{
+    a{
+        text-decoration: none;
+        color: $dark-color-1;
+    }
+    .portadaProyecto {
+        width: 400px;
+    }
+}
+
+//Estilos project
+#bandaProyectos{
+    background-color: $dark-color-1;
+    p{
+        color: $bright-color-2;
+    }
+    a{
+        color: $bright-color-2;
+    }
+    img {
+        width: 400px;
+    }
+}
+
+//Estilos about
+#diagramaCreativo{
+    height: 300px;
+}
+
+.about{
+    ul {
+    list-style-type: none;
+    }
+    a{
+        color: $dark-color-1;
+    }
+}
+
+//Estilos contact
+.contact{
+    text-align: center;
+}
+
+//Estilos footer
+footer{
+    background-color: $dark-color-1;
+    text-align: center;
+    color: $bright-color-2;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px;
+    margin-top: auto;
+    ul{
+        li{
+            list-style: none;
+        }
+    }
+    a{
+        color: $bright-color-2;
+    }
+}
+
+//Media queries
+
+//Mobile
+@media (max-width: 768px) {
+    .grid-container-home {
+        // Hacer el grid de la home 1 sola columna cuando estemos en movil
+        grid-template-columns: 1fr; 
+        .intro-home {
+            font-size: 42px;
+            line-height: 44px;
+        }
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+    }
+
+    footer{
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
