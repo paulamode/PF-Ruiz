@@ -117,12 +117,24 @@ main {
 
 //Estilos para work
 .work{
+    padding: 0 21px; // Apply padding
+    display: flex;
+    align-items: center;
+
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
     a{
         text-decoration: none;
         color: $dark-color-1;
     }
     .portadaProyecto {
-        width: 400px;
+        width: 30vw;
     }
 }
 

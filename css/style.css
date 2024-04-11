@@ -116,12 +116,24 @@ main {
   margin: 0;
 }
 
+.work {
+  padding: 0 21px;
+  display: flex;
+  align-items: center;
+}
+.work .projects-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
 .work a {
   text-decoration: none;
   color: black;
 }
 .work .portadaProyecto {
-  width: 400px;
+  width: 30vw;
 }
 
 #bandaProyectos {
